@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link  rel="stylesheet" href="currency.css">
+</head>
+<body class="b">
+ <div class="main">
+    <div class ="container">
+   
+        <form class="border1">
+            <h3> <b>CURRENCY CONVERTER</b></h3>
+        <label for="from"class="body1"><B>Currency</B></label>
+        <input type="number" id="from" placeholder="Enter amount" oninput="validateInput()" required>
+        <br>
+        <br>
+        <label for="fromCurrency"><B>CONVERT FROM</B></label>
+        <select id=" fromCurrency">
+            <option>select</option>
+            <option value="INR">Indian Rupee</option>
+            <option value="USD">Us Dollar</option>
+            <option value="EUR">EURO</option>
+        </select>
+         <br>
+         <br>
+        <label for="to Currency"> <b>Convert To</b></label>
+        <select id=" toCurrency">
+            <option>Select</option>
+            <option value="INR">Indian Rupee</option>
+            <option value="USD">Us Dollar</option>
+            <option value="EUR">EURO</option>
+        </select>
+        <br>
+        <br>
+        </div>
+        <div class="btndiv" >
+            <button class="btn" id="btn" onclick="convert()">Convert</button> 
+        </div>
+        <div class="result" id="result">
+    
+        </div>
+    
+        </form>
+ </div>
+
+    <script src="currency.js"></script>
+        
+</body>
+</html>
